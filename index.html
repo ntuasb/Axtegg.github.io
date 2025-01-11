@@ -1,290 +1,589 @@
-<html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
-   Axtegg Lawyers
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
- </head>
- <body class="font-roboto bg-gray-900 text-gray-200">
-  <header class="bg-gray-800 text-white p-4">
-   <div class="container mx-auto flex justify-between items-center">
-    <h1 class="text-2xl font-bold">
-     Axtegg Lawyers
-    </h1>
-    <nav>
-     <ul class="flex space-x-4">
-      <li>
-       <a class="hover:underline" href="#home" data-lang="home">
-        Home
-       </a>
-      </li>
-      <li>
-       <a class="hover:underline" href="#services" data-lang="services">
-        Services
-       </a>
-      </li>
-      <li>
-       <a class="hover:underline" href="#testimonials" data-lang="testimonials">
-        Testimonials
-       </a>
-      </li>
-      <li>
-       <a class="hover:underline" href="#contact" data-lang="contact">
-        Contact
-       </a>
-      </li>
-     </ul>
-    </nav>
-    <button class="bg-gray-700 text-white px-4 py-2 rounded" id="language-toggle">
-     ES
-    </button>
-   </div>
-  </header>
-  <section class="bg-gray-800 py-12" id="home">
-   <div class="container mx-auto text-center">
-    <h2 class="text-3xl font-bold mb-4" data-lang="welcome">
-     Welcome to Axtegg Lawyers
-    </h2>
-    <p class="text-lg mb-8" data-lang="description">
-     Specialists in Criminal, Civil, Pension, and Labor Law
-    </p>
-    <img alt="Image of a group of professional lawyers in a meeting" class="mx-auto" height="400" src="https://storage.googleapis.com/a1aa/image/sapox7es3DRgSyn6gQofevArfaxFKdyxyUedXLJpcJEhIFZgC.jpg" width="600"/>
-   </div>
-  </section>
-  <section class="bg-gray-700 py-12" id="services">
-   <div class="container mx-auto text-center">
-    <h2 class="text-3xl font-bold mb-8" data-lang="ourServices">
-     Our Services
-    </h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-     <div class="bg-gray-800 p-6 rounded shadow">
-      <h3 class="text-xl font-bold mb-4" data-lang="service-criminal">
-       Criminal Law
-      </h3>
-      <p data-lang="service-criminal-desc">
-       Expert legal representation in criminal cases.
-      </p>
-     </div>
-     <div class="bg-gray-800 p-6 rounded shadow">
-      <h3 class="text-xl font-bold mb-4" data-lang="service-civil">
-       Civil Law
-      </h3>
-      <p data-lang="service-civil-desc">
-       Comprehensive civil law services for individuals and businesses.
-      </p>
-     </div>
-     <div class="bg-gray-800 p-6 rounded shadow">
-      <h3 class="text-xl font-bold mb-4" data-lang="service-pension">
-       Pension Law
-      </h3>
-      <p data-lang="service-pension-desc">
-       Guidance and representation in pension-related matters.
-      </p>
-     </div>
-     <div class="bg-gray-800 p-6 rounded shadow">
-      <h3 class="text-xl font-bold mb-4" data-lang="service-labor">
-       Labor Law
-      </h3>
-      <p data-lang="service-labor-desc">
-       Protecting your rights in the workplace.
-      </p>
-     </div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>
+        Axtegg Lawyers - Expertos en Derecho Penal, Civil, Pensiones y Laboral
+    </title>
+    <meta content="Axtegg Lawyers: Sus socios legales de confianza especializados en Derecho Penal, Civil, Pensiones y Laboral. Contáctenos para una representación legal experta." name="description"/>
+    <meta content="Axtegg Lawyers - Expertos en Derecho Penal, Civil, Pensiones y Laboral" property="og:title"/>
+    <meta content="Sus socios legales de confianza especializados en Derecho Penal, Civil, Pensiones y Laboral." property="og:description"/>
+    <meta content="./images/grupo-abogados-profesionales-reunion.jpg" property="og:image"/>
+    <meta content="https://ntuasb.github.io/Axtegg" property="og:url"/>
+    <meta content="website" property="og:type"/>
+    <meta content="es_ES" property="og:locale"/>
+    <meta content="Axtegg Lawyers" property="og:site_name"/>
+    <meta content="./images/grupo-abogados-profesionales-reunion.jpg" name="twitter:image"/>
+    <meta content="Axtegg Lawyers - Expertos en Derecho Penal, Civil, Pensiones y Laboral" name="twitter:title"/>
+    <meta content="Sus socios legales de confianza especializados en Derecho Penal, Civil, Pensiones y Laboral." name="twitter:description"/>
+    <meta content="summary_large_image" name="twitter:card"/>
+    <link href="https://ntuasb.github.io/Axtegg" rel="canonical"/>
+    <meta content="index, follow" name="robots"/>
+    <meta content="Abogados Derecho Penal, Abogados Derecho Civil, Abogados Derecho Pensiones, Abogados Derecho Laboral, Firma Abogados, Asesoría Legal" name="keywords"/>
+    <meta content="Axtegg Lawyers Team" name="author"/>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap"></noscript>
+    <link rel="preload" as="image" href="./images/grupo-abogados-profesionales-reunion.jpg">
+    <script>
+    const translations = {
+        en: {
+            'home': 'Home',
+            'services': 'Services',
+            'testimonials': 'Testimonials',
+            'contact': 'Contact',
+            'blog': 'Blog',
+            'welcome': 'Welcome to Axtegg Lawyers',
+            'description': 'Specialists in Criminal, Civil, Pension, and Labor Law',
+            'ourServices': 'Our Services',
+            'clientTestimonials': 'Client Testimonials',
+            'contactUs': 'Contact Us',
+            'service-criminal': 'Criminal Law',
+            'service-criminal-desc': 'Expert legal representation in criminal cases.',
+            'service-civil': 'Civil Law',
+            'service-civil-desc': 'Comprehensive civil law services for individuals and businesses.',
+            'service-pension': 'Pension Law',
+            'service-pension-desc': 'Guidance and representation in pension-related matters.',
+            'service-labor': 'Labor Law',
+            'service-labor-desc': 'Protecting your rights in the workplace.',
+            'testimonial-1': '"Proporcionaron consejos claros y concisos. Muy profesionales."',
+            'testimonial-2': '"Excelente servicio y grandes resultados. Recomiendo mucho a Axtegg Lawyers."',
+            'testimonial-3': '"Axtegg Lawyers me ayudó a navegar un complejo problema de pensiones. Estoy muy agradecido."',
+            'testimonial-4': '"Axtegg Lawyers provided exceptional service and helped me win my case. Highly recommend!"',
+            'testimonial-5': '"Professional and dedicated team. They were with me every step of the way."',
+            'testimonial-6': '"Their expertise in labor law is unmatched. Thank you for your support!"',
+            'contact-name-label': 'Name',
+            'contact-email-label': 'Email',
+            'contact-message-label': 'Message',
+            'contact-send-button': 'Send',
+        },
+        es: {
+            'home': 'Inicio',
+            'services': 'Servicios',
+            'testimonials': 'Testimonios',
+            'contact': 'Contacto',
+            'blog': 'Blog',
+            'welcome': 'Bienvenido a Axtegg Lawyers',
+            'description': 'Especialistas en Derecho Penal, Civil, de Pensiones y Laboral',
+            'ourServices': 'Nuestros Servicios',
+            'clientTestimonials': 'Testimonios de Clientes',
+            'contactUs': 'Contáctenos',
+            'service-criminal': 'Derecho Penal',
+            'service-criminal-desc': 'Representación legal experta en casos penales.',
+            'service-civil': 'Derecho Civil',
+            'service-civil-desc': 'Servicios completos de derecho civil para individuos y empresas.',
+            'service-pension': 'Derecho de Pensiones',
+            'service-pension-desc': 'Orientación y representación en asuntos relacionados con pensiones.',
+            'service-labor': 'Derecho Laboral',
+            'service-labor-desc': 'Protegiendo sus derechos en el lugar de trabajo.',
+            'testimonial-1': '"Proporcionaron consejos claros y concisos. Muy profesionales."',
+            'testimonial-2': '"Excelente servicio y grandes resultados. Recomiendo mucho a Axtegg Lawyers."',
+            'testimonial-3': '"Axtegg Lawyers me ayudó a navegar un complejo problema de pensiones. Estoy muy agradecido."',
+            'testimonial-4': '"Axtegg Lawyers brindó un servicio excepcional y me ayudó a ganar mi caso. ¡Altamente recomendado!"',
+            'testimonial-5': '"Equipo profesional y dedicado. Estuvieron conmigo en cada paso del camino."',
+            'testimonial-6': '"Su experiencia en derecho laboral es inigualable. ¡Gracias por su apoyo!"',
+            'contact-name-label': 'Nombre',
+            'contact-email-label': 'Correo Electrónico',
+            'contact-message-label': 'Mensaje',
+            'contact-send-button': 'Enviar',
+        },
+    };
+
+    const languageToggle = document.getElementById('language-toggle');
+    let currentLanguage = 'es';
+
+    function setLanguage(lang) {
+        currentLanguage = lang;
+        languageToggle.textContent = lang.toUpperCase();
+        languageToggle.setAttribute('aria-label', `Cambiar idioma a ${lang === 'es' ? 'inglés' : 'español'}`);
+        document.documentElement.setAttribute('lang', lang);
+
+        document.querySelectorAll('[data-lang]').forEach(element => {
+            const key = element.getAttribute('data-lang');
+            if (translations[lang][key]) {
+                element.textContent = translations[lang][key];
+            }
+        });
+    }
+
+    languageToggle.addEventListener('click', function(event) {
+        event.preventDefault();
+        const newLanguage = currentLanguage === 'es' ? 'en' : 'es';
+        setLanguage(newLanguage);
+    });
+
+    setLanguage(currentLanguage);
+
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Formulario enviado (funcionalidad no implementada).');
+    });
+</script>
+    <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+        #home {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 100vh;
+        }
+
+        #home-content {
+            position: relative;
+            z-index: 20;
+            padding-top: 8rem;
+            padding-bottom: 8rem;
+        }
+
+        #home-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+
+        .map-responsive {
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+            height: 0;
+        }
+
+        .map-responsive iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+
+        body {
+            overflow-x: hidden;
+            width: 100%;
+            margin: 0;
+            background-color: #111827;
+            color: #e5e7eb;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            width: 100%;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .grid {
+            display: grid;
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .header .container {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .header nav {
+                margin-top: 1rem;
+            }
+
+            .header ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .header li {
+                margin: 0.5rem 0;
+            }
+        }
+
+        html {
+            scroll-behavior: smooth;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        section {
+            width: 100%;
+        }
+
+        .bg-gray-800 { background-color: #1f2937; }
+        .bg-gray-700 { background-color: #374151; }
+        .text-white { color: #ffffff; }
+        .p-4 { padding: 1rem; }
+        .z-50 { z-index: 50; }
+        .header { position: sticky; top: 0; }
+        .text-2xl { font-size: 1.5rem; }
+        .font-bold { font-weight: bold; }
+        .order-2 { order: 2; }
+        .md\:order-1 { @media (min-width: 768px) { order: 1; } }
+        .text-center { text-align: center; }
+        .md\:text-left { @media (min-width: 768px) { text-align: left; } }
+        .flex-grow { flex-grow: 1; }
+        .order-3 { order: 3; }
+        .md\:order-2 { @media (min-width: 768px) { order: 2; } }
+        .w-full { width: 100%; }
+        .md\:w-auto { @media (min-width: 768px) { width: auto; } }
+        .mt-2 { margin-top: 0.5rem; }
+        .md\:mt-0 { @media (min-width: 768px) { margin-top: 0; } }
+        .space-x-4 > * + * { margin-left: 1rem; }
+        .justify-center { justify-content: center; }
+        .md\:justify-normal { @media (min-width: 768px) { justify-content: flex-start; } }
+        .flex-col { flex-direction: column; }
+        .md\:flex-row { @media (min-width: 768px) { flex-direction: row; } }
+        .items-center { align-items: center; }
+        .mb-1 { margin-bottom: 0.25rem; }
+        .md\:mb-0 { @media (min-width: 768px) { margin-bottom: 0; } }
+        .hover\:underline:hover { text-decoration: underline; }
+        .bg-gray-700 { background-color: #374151; }
+        .px-4 { padding-left: 1rem; padding-right: 1rem; }
+        .py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+        .rounded { border-radius: 0.25rem; }
+        .bg-gray-800 { background-color: #1f2937; }
+        .py-12 { padding-top: 3rem; padding-bottom: 3rem; }
+        .text-3xl { font-size: 1.875rem; }
+        .mb-4 { margin-bottom: 1rem; }
+        .text-lg { font-size: 1.125rem; }
+        .mb-8 { margin-bottom: 2rem; }
+        .grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+        .md\:grid-cols-2 { @media (min-width: 768px) { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+        .lg\:grid-cols-3 { @media (min-width: 1024px) { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+        .gap-8 { gap: 2rem; }
+        .p-6 { padding: 1.5rem; }
+        .shadow { box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); }
+        .italic { font-style: italic; }
+        .mt-4 { margin-top: 1rem; }
+        .rounded-lg { border-radius: 0.5rem; }
+        .shadow-md { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+        .block { display: block; }
+        .text-left { text-align: left; }
+        .border { border-width: 1px; }
+        .border-gray-600 { border-color: #4b5563; }
+        .bg-gray-900 { background-color: #111827; }
+        .text-gray-200 { color: #e5e7eb; }
+        .w-full { width: 100%; }
+        textarea { resize: vertical; }
+    </style>
+</head>
+<body>
+<header class="bg-gray-800 text-white p-4 z-50 header" role="banner">
+    <div class="container mx-auto flex justify-between items-center flex-wrap">
+        <div class="order-2 md:order-1 text-center md:text-left flex-grow">
+            <h1 class="text-2xl font-bold">
+                Axtegg Lawyers
+            </h1>
+        </div>
+        <nav class="order-3 md:order-2 w-full md:w-auto mt-2 md:mt-0" aria-label="Navegación principal">
+            <ul class="flex md:space-x-4 justify-center md:justify-normal flex-col md:flex-row items-center">
+                <li class="mb-1 md:mb-0">
+                    <a class="hover:underline" data-lang="home" href="#home">
+                        Inicio
+                    </a>
+                </li>
+                <li class="mb-1 md:mb-0">
+                    <a class="hover:underline" data-lang="services" href="#services">
+                        Servicios
+                    </a>
+                </li>
+                <li class="mb-1 md:mb-0">
+                    <a class="hover:underline" data-lang="testimonials" href="#testimonials">
+                        Testimonios
+                    </a>
+                </li>
+                <li class="mb-1 md:mb-0">
+                    <a class="hover:underline" data-lang="blog" href="./blog.html">
+                        Blog
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="order-1 md:order-3 ml-4">
+            <button class="bg-gray-700 text-white px-4 py-2 rounded" id="language-toggle" aria-label="Cambiar idioma a inglés">
+                ES
+            </button>
+        </div>
     </div>
-   </div>
-  </section>
-  <section class="bg-gray-800 py-12" id="testimonials">
-   <div class="container mx-auto text-center">
-    <h2 class="text-3xl font-bold mb-8" data-lang="clientTestimonials">
-     Client Testimonials
-    </h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-     <div class="bg-gray-700 p-6 rounded shadow">
-      <p class="italic" data-lang="testimonial-1">
-       "Axtegg Lawyers provided exceptional service and helped me win my case. Highly recommend!"
-      </p>
-      <p class="mt-4 font-bold">
-       - John Doe, USA
-      </p>
-     </div>
-     <div class="bg-gray-700 p-6 rounded shadow">
-      <p class="italic" data-lang="testimonial-2">
-       "Professional and dedicated team. They were with me every step of the way."
-      </p>
-      <p class="mt-4 font-bold">
-       - Maria Garcia, Spain
-      </p>
-     </div>
-     <div class="bg-gray-700 p-6 rounded shadow">
-      <p class="italic" data-lang="testimonial-3">
-       "Their expertise in labor law is unmatched. Thank you for your support!"
-      </p>
-      <p class="mt-4 font-bold">
-       - Li Wei, China
-      </p>
-     </div>
-     <div class="bg-gray-700 p-6 rounded shadow">
-      <p class="italic" data-lang="testimonial-4">
-       "Axtegg Lawyers helped me navigate a complex pension issue. I am very grateful."
-      </p>
-      <p class="mt-4 font-bold">
-       - Ahmed Khan, UAE
-      </p>
-     </div>
-     <div class="bg-gray-700 p-6 rounded shadow">
-      <p class="italic" data-lang="testimonial-5">
-       "Excellent service and great results. I highly recommend Axtegg Lawyers."
-      </p>
-      <p class="mt-4 font-bold">
-       - Anna Schmidt, Germany
-      </p>
-     </div>
-     <div class="bg-gray-700 p-6 rounded shadow">
-      <p class="italic" data-lang="testimonial-6">
-       "They provided clear and concise advice. Very professional."
-      </p>
-      <p class="mt-4 font-bold">
-       - Yuki Tanaka, Japan
-      </p>
-     </div>
+</header>
+<section class="bg-gray-800 relative overflow-hidden" id="home" aria-labelledby="home-title">
+    <video id="home-video" class="w-full h-full absolute top-0 left-0 object-cover z-0" autoplay loop muted playsinline poster="./images/grupo-abogados-profesionales-reunion.jpg">
+        <source src="./videos/grupo-abogados-profesionales-reunion.mp4" type="video/mp4">
+        <source src="./videos/grupo-abogados-profesionales-reunion.webm" type="video/webm">
+        Tu navegador no soporta la etiqueta de video.
+    </video>
+    <div class="container mx-auto text-center relative z-10" id="home-content">
+        <h2 class="text-3xl font-bold mb-4 text-white" data-lang="welcome" id="home-title">
+            Bienvenido a Axtegg Lawyers
+        </h2>
+        <p class="text-lg mb-8 text-gray-200" data-lang="description">
+            Especialistas en Derecho Penal, Civil, de Pensiones y Laboral
+        </p>
+        <a href="#contact" class="bg-gray-700 text-white px-6 py-3 rounded hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2" data-lang="contact">Contáctenos para una consulta</a>
     </div>
-   </div>
-  </section>
-  <section class="bg-gray-700 py-12" id="contact">
-   <div class="container mx-auto text-center">
-    <h2 class="text-3xl font-bold mb-8" data-lang="contactUs">
-     Contact Us
-    </h2>
-    <p class="mb-4" data-lang="contact-email">
-     Corporate Email: contact@axtegglawyers.com
+</section>
+<section class="bg-gray-700 py-12" id="services" aria-labelledby="services-title">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-8" data-lang="ourServices" id="services-title">
+            Nuestros Servicios
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-gray-800 p-6 rounded shadow">
+                <h3 class="text-xl font-bold mb-4" data-lang="service-criminal">
+                    Derecho Penal
+                </h3>
+                <p data-lang="service-criminal-desc">
+                    Representación legal experta en casos penales.
+                </p>
+                <a href="#contact" class="text-blue-400 hover:underline" data-lang="contact">Más información</a>
+            </div>
+            <div class="bg-gray-800 p-6 rounded shadow">
+                <h3 class="text-xl font-bold mb-4" data-lang="service-civil">
+                    Derecho Civil
+                </h3>
+                <p data-lang="service-civil-desc">
+                    Servicios completos de derecho civil para individuos y empresas.
+                </p>
+                <a href="#contact" class="text-blue-400 hover:underline" data-lang="contact">Más información</a>
+            </div>
+            <div class="bg-gray-800 p-6 rounded shadow">
+                <h3 class="text-xl font-bold mb-4" data-lang="service-pension">
+                    Derecho de Pensiones
+                </h3>
+                <p data-lang="service-pension-desc">
+                    Orientación y representación en asuntos relacionados con pensiones.
+                </p>
+                <a href="#contact" class="text-blue-400 hover:underline" data-lang="contact">Más información</a>
+            </div>
+            <div class="bg-gray-800 p-6 rounded shadow">
+                <h3 class="text-xl font-bold mb-4" data-lang="service-labor">
+                    Derecho Laboral
+                </h3>
+                <p data-lang="service-labor-desc">
+                    Protegiendo sus derechos en el lugar de trabajo.
+                </p>
+                <a href="#contact" class="text-blue-400 hover:underline" data-lang="contact">Más información</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-gray-800 py-12" id="testimonials" aria-labelledby="testimonials-title">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-8" data-lang="clientTestimonials" id="testimonials-title">
+            Testimonios de Clientes
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <blockquote class="bg-gray-700 p-6 rounded shadow">
+                <p class="italic" data-lang="testimonial-6">
+                    "Proporcionaron consejos claros y concisos. Muy profesionales."
+                </p>
+                <footer class="mt-4 font-bold">
+                    - Yuki Tanaka, Japan
+                </footer>
+            </blockquote>
+            <blockquote class="bg-gray-700 p-6 rounded shadow">
+                <p class="italic" data-lang="testimonial-5">
+                    "Excelente servicio y grandes resultados. Recomiendo mucho a Axtegg Lawyers."
+                </p>
+                <footer class="mt-4 font-bold">
+                    - Anna Schmidt, Germany
+                </footer>
+            </blockquote>
+            <blockquote class="bg-gray-700 p-6 rounded shadow">
+                <p class="italic" data-lang="testimonial-4">
+                    "Axtegg Lawyers me ayudó a navegar un complejo problema de pensiones. Estoy muy agradecido."
+                </p>
+                <footer class="mt-4 font-bold">
+                    - Ahmed Khan, UAE
+                </footer>
+            </blockquote>
+            <blockquote class="bg-gray-700 p-6 rounded shadow">
+                <p class="italic" data-lang="testimonial-1">
+                    "Axtegg Lawyers brindó un servicio excepcional y me ayudó a ganar mi caso. ¡Altamente recomendado!"
+                </p>
+                <footer class="mt-4 font-bold">
+                    - John Doe, USA
+                </footer>
+            </blockquote>
+            <blockquote class="bg-gray-700 p-6 rounded shadow">
+                <p class="italic" data-lang="testimonial-2">
+                    "Equipo profesional y dedicado. Estuvieron conmigo en cada paso del camino."
+                </p>
+                <footer class="mt-4 font-bold">
+                    - Maria Garcia, Spain
+                </footer>
+            </blockquote>
+            <blockquote class="bg-gray-700 p-6 rounded shadow">
+                <p class="italic" data-lang="testimonial-3">
+                    "Su experiencia en derecho laboral es inigualable. ¡Gracias por su apoyo!"
+                </p>
+                <footer class="mt-4 font-bold">
+                    - Li Wei, China
+                </footer>
+            </blockquote>
+        </div>
+    </div>
+</section>
+<section class="bg-gray-700 py-12" id="contact" aria-labelledby="contact-title">
+    <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-8 text-center" data-lang="contactUs" id="contact-title">
+            Contáctenos
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div style="width: 100%;">
+                <div class="map-responsive rounded-lg shadow-md">
+                    <iframe src="https://www.google.com/maps/embed?pb=!3m2!1ses!2sus!4v1736464304028!5m2!1ses!2sus!6m8!1m7!1sk6GLo7WfViOyQb2CfEy54Q!2m2!1d3.447835298521681!2d-76.53311574019416!3f39.561980503843536!4f1.8197757123562752!5f0.7820865974627469"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" aria-label="Mapa de ubicación de Axtegg Lawyers">
+                    </iframe>
+                </div>
+                <img alt="Equipo de abogados trabajando juntos" class="mt-4 rounded-lg shadow-md" src="./images/online-contact-center.jpeg"/>
+            </div>
+            <div class="bg-gray-800 p-6 rounded shadow">
+                <form class="mx-auto" id="contactForm" aria-label="Formulario de contacto">
+                    <div class="mb-4">
+                        <label class="block text-left mb-2" data-lang="contact-name-label" for="name">
+                            Nombre
+                        </label>
+                        <input class="w-full p-2 border border-gray-600 rounded bg-gray-900 text-gray-200" id="name"
+                               required="" type="text" placeholder="Tu nombre"/>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-left mb-2" data-lang="contact-email-label" for="email">
+                            Correo Electrónico
+                        </label>
+                        <input class="w-full p-2 border border-gray-600 rounded bg-gray-900 text-gray-200" id="email"
+                               required="" type="email" placeholder="Tu correo electrónico"/>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-left mb-2" data-lang="contact-message-label" for="message">
+                            Mensaje
+                        </label>
+                        <textarea class="w-full p-2 border border-gray-600 rounded bg-gray-900 text-gray-200"
+                                  id="message" required="" rows="4" placeholder="Escribe tu mensaje aquí"></textarea>
+                    </div>
+                    <button class="bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2" data-lang="contact-send-button"
+                            type="submit">
+                        Enviar
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="bg-gray-800 text-white p-4 text-center" role="contentinfo">
+    <p>
+        © 2025 Axtegg Lawyers. Todos los derechos reservados.
     </p>
-    <p class="mb-8" data-lang="contact-quote">
-     Quote: 100,000 COP
-    </p>
-    <form class="bg-gray-800 p-6 rounded shadow mx-auto max-w-lg">
-     <div class="mb-4">
-      <label class="block text-left mb-2" for="name" data-lang="contact-name-label">
-       Name
-      </label>
-      <input class="w-full p-2 border border-gray-600 rounded bg-gray-900 text-gray-200" id="name" required="" type="text"/>
-     </div>
-     <div class="mb-4">
-      <label class="block text-left mb-2" for="email" data-lang="contact-email-label">
-       Email
-      </label>
-      <input class="w-full p-2 border border-gray-600 rounded bg-gray-900 text-gray-200" id="email" required="" type="email"/>
-     </div>
-     <div class="mb-4">
-      <label class="block text-left mb-2" for="message" data-lang="contact-message-label">
-       Message
-      </label>
-      <textarea class="w-full p-2 border border-gray-600 rounded bg-gray-900 text-gray-200" id="message" required="" rows="4"></textarea>
-     </div>
-     <button class="bg-gray-700 text-white px-4 py-2 rounded" type="submit" data-lang="contact-send-button">
-      Send
-     </button>
-    </form>
-   </div>
-  </section>
-  <footer class="bg-gray-800 text-white p-4 text-center">
-   <p>
-    © 2025 Axtegg Lawyers. All rights reserved.
-   </p>
-  </footer>
-  <script>
-   const translations = {
-     en: {
-       'home': 'Home',
-       'services': 'Services',
-       'testimonials': 'Testimonials',
-       'contact': 'Contact',
-       'welcome': 'Welcome to Axtegg Lawyers',
-       'description': 'Specialists in Criminal, Civil, Pension, and Labor Law',
-       'ourServices': 'Our Services',
-       'clientTestimonials': 'Client Testimonials',
-       'contactUs': 'Contact Us',
-       'service-criminal': 'Criminal Law',
-       'service-criminal-desc': 'Expert legal representation in criminal cases.',
-       'service-civil': 'Civil Law',
-       'service-civil-desc': 'Comprehensive civil law services for individuals and businesses.',
-       'service-pension': 'Pension Law',
-       'service-pension-desc': 'Guidance and representation in pension-related matters.',
-       'service-labor': 'Labor Law',
-       'service-labor-desc': 'Protecting your rights in the workplace.',
-       'testimonial-1': '"Axtegg Lawyers provided exceptional service and helped me win my case. Highly recommend!"',
-       'testimonial-2': '"Professional and dedicated team. They were with me every step of the way."',
-       'testimonial-3': '"Their expertise in labor law is unmatched. Thank you for your support!"',
-       'testimonial-4': '"Axtegg Lawyers helped me navigate a complex pension issue. I am very grateful."',
-       'testimonial-5': '"Excellent service and great results. I highly recommend Axtegg Lawyers."',
-       'testimonial-6': '"They provided clear and concise advice. Very professional."',
-       'contact-email': 'Corporate Email: contact@axtegglawyers.com',
-       'contact-quote': 'Quote: 100,000 COP',
-       'contact-name-label': 'Name',
-       'contact-email-label': 'Email',
-       'contact-message-label': 'Message',
-       'contact-send-button': 'Send',
-     },
-     es: {
-       'home': 'Inicio',
-       'services': 'Servicios',
-       'testimonials': 'Testimonios',
-       'contact': 'Contacto',
-       'welcome': 'Bienvenido a Axtegg Lawyers',
-       'description': 'Especialistas en Derecho Penal, Civil, de Pensiones y Laboral',
-       'ourServices': 'Nuestros Servicios',
-       'clientTestimonials': 'Testimonios de Clientes',
-       'contactUs': 'Contáctenos',
-       'service-criminal': 'Derecho Penal',
-       'service-criminal-desc': 'Representación legal experta en casos penales.',
-       'service-civil': 'Derecho Civil',
-       'service-civil-desc': 'Servicios completos de derecho civil para individuos y empresas.',
-       'service-pension': 'Derecho de Pensiones',
-       'service-pension-desc': 'Orientación y representación en asuntos relacionados con pensiones.',
-       'service-labor': 'Derecho Laboral',
-       'service-labor-desc': 'Protegiendo sus derechos en el lugar de trabajo.',
-       'testimonial-1': '"Axtegg Lawyers brindó un servicio excepcional y me ayudó a ganar mi caso. ¡Altamente recomendado!"',
-       'testimonial-2': '"Equipo profesional y dedicado. Estuvieron conmigo en cada paso del camino."',
-       'testimonial-3': '"Su experiencia en derecho laboral es inigualable. ¡Gracias por su apoyo!"',
-       'testimonial-4': '"Axtegg Lawyers me ayudó a navegar un complejo problema de pensiones. Estoy muy agradecido."',
-       'testimonial-5': '"Excelente servicio y grandes resultados. Recomiendo mucho a Axtegg Lawyers."',
-       'testimonial-6': '"Proporcionaron consejos claros y concisos. Muy profesionales."',
-       'contact-email': 'Correo Corporativo: contact@axtegglawyers.com',
-       'contact-quote': 'Cotización: 100,000 COP',
-       'contact-name-label': 'Nombre',
-       'contact-email-label': 'Correo Electrónico',
-       'contact-message-label': 'Mensaje',
-       'contact-send-button': 'Enviar',
-     },
-   };
+</footer>
+<script>
+    const translations = {
+        en: {
+            'home': 'Home',
+            'services': 'Services',
+            'testimonials': 'Testimonials',
+            'contact': 'Contact',
+            'blog': 'Blog',
+            'welcome': 'Welcome to Axtegg Lawyers',
+            'description': 'Specialists in Criminal, Civil, Pension, and Labor Law',
+            'ourServices': 'Our Services',
+            'clientTestimonials': 'Client Testimonials',
+            'contactUs': 'Contact Us',
+            'service-criminal': 'Criminal Law',
+            'service-criminal-desc': 'Expert legal representation in criminal cases.',
+            'service-civil': 'Civil Law',
+            'service-civil-desc': 'Comprehensive civil law services for individuals and businesses.',
+            'service-pension': 'Pension Law',
+            'service-pension-desc': 'Guidance and representation in pension-related matters.',
+            'service-labor': 'Labor Law',
+            'service-labor-desc': 'Protecting your rights in the workplace.',
+            'testimonial-1': '"Proporcionaron consejos claros y concisos. Muy profesionales."',
+            'testimonial-2': '"Excelente servicio y grandes resultados. Recomiendo mucho a Axtegg Lawyers."',
+            'testimonial-3': '"Axtegg Lawyers me ayudó a navegar un complejo problema de pensiones. Estoy muy agradecido."',
+            'testimonial-4': '"Axtegg Lawyers provided exceptional service and helped me win my case. Highly recommend!"',
+            'testimonial-5': '"Professional and dedicated team. They were with me every step of the way."',
+            'testimonial-6': '"Their expertise in labor law is unmatched. Thank you for your support!"',
+            'contact-name-label': 'Name',
+            'contact-email-label': 'Email',
+            'contact-message-label': 'Message',
+            'contact-send-button': 'Send',
+        },
+        es: {
+            'home': 'Inicio',
+            'services': 'Servicios',
+            'testimonials': 'Testimonios',
+            'contact': 'Contacto',
+            'blog': 'Blog',
+            'welcome': 'Bienvenido a Axtegg Lawyers',
+            'description': 'Especialistas en Derecho Penal, Civil, de Pensiones y Laboral',
+            'ourServices': 'Nuestros Servicios',
+            'clientTestimonials': 'Testimonios de Clientes',
+            'contactUs': 'Contáctenos',
+            'service-criminal': 'Derecho Penal',
+            'service-criminal-desc': 'Representación legal experta en casos penales.',
+            'service-civil': 'Derecho Civil',
+            'service-civil-desc': 'Servicios completos de derecho civil para individuos y empresas.',
+            'service-pension': 'Derecho de Pensiones',
+            'service-pension-desc': 'Orientación y representación en asuntos relacionados con pensiones.',
+            'service-labor': 'Derecho Laboral',
+            'service-labor-desc': 'Protegiendo sus derechos en el lugar de trabajo.',
+            'testimonial-1': '"Proporcionaron consejos claros y concisos. Muy profesionales."',
+            'testimonial-2': '"Excelente servicio y grandes resultados. Recomiendo mucho a Axtegg Lawyers."',
+            'testimonial-3': '"Axtegg Lawyers me ayudó a navegar un complejo problema de pensiones. Estoy muy agradecido."',
+            'testimonial-4': '"Axtegg Lawyers brindó un servicio excepcional y me ayudó a ganar mi caso. ¡Altamente recomendado!"',
+            'testimonial-5': '"Equipo profesional y dedicado. Estuvieron conmigo en cada paso del camino."',
+            'testimonial-6': '"Su experiencia en derecho laboral es inigualable. ¡Gracias por su apoyo!"',
+            'contact-name-label': 'Nombre',
+            'contact-email-label': 'Correo Electrónico',
+            'contact-message-label': 'Mensaje',
+            'contact-send-button': 'Enviar',
+        },
+    };
 
-   const languageToggle = document.getElementById('language-toggle');
-   let currentLanguage = 'en'; // Initial language
+    const languageToggle = document.getElementById('language-toggle');
+    let currentLanguage = 'es';
 
-   function setLanguage(lang) {
-     currentLanguage = lang;
-     languageToggle.textContent = lang.toUpperCase();
-     document.documentElement.setAttribute('lang', lang);
+    function setLanguage(lang) {
+        currentLanguage = lang;
+        languageToggle.textContent = lang.toUpperCase();
+        languageToggle.setAttribute('aria-label', `Cambiar idioma a ${lang === 'es' ? 'inglés' : 'español'}`);
+        document.documentElement.setAttribute('lang', lang);
 
-     // Update translatable text content
-     document.querySelectorAll('[data-lang]').forEach(element => {
-       const key = element.getAttribute('data-lang');
-       if (translations[lang][key]) {
-         element.textContent = translations[lang][key];
-       }
-     });
-   }
+        document.querySelectorAll('[data-lang]').forEach(element => {
+            const key = element.getAttribute('data-lang');
+            if (translations[lang][key]) {
+                element.textContent = translations[lang][key];
+            }
+        });
+    }
 
-   languageToggle.addEventListener('click', () => {
-     const newLanguage = currentLanguage === 'es' ? 'en' : 'es';
-     setLanguage(newLanguage);
-   });
+    languageToggle.addEventListener('click', function(event) {
+        event.preventDefault();
+        const newLanguage = currentLanguage === 'es' ? 'en' : 'es';
+        setLanguage(newLanguage);
+    });
 
-   // Set initial language
-   setLanguage(currentLanguage);
-  </script>
- </body>
+    setLanguage(currentLanguage);
+
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Formulario enviado (funcionalidad no implementada).');
+    });
+</script>
+</body>
 </html>
